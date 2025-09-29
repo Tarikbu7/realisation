@@ -12,12 +12,12 @@ let questions = [
   
   let correctAnswers = 0;
   let wrongAnswers = 0;
-  let extremeTime = 3 * 1000;   
+  let extremeTime = 4 * 1000;   
   for (let i = 0; i < questions.length; i++) {
     console.log(`Question ${i + 1}/${questions.length}: ${questions[i].question}`);
     
     let startTime = Date.now(); 
-    let userAnswer = prompt(`${questions[i].code}: ${questions[i].question} (3s to answer)`);
+    let userAnswer = prompt(`${questions[i].code}: ${questions[i].question} (4s to answer)`);
     let elapsed = Date.now() - startTime;
   
     if (!userAnswer) userAnswer = ""; 
